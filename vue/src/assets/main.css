@@ -1,35 +1,88 @@
 @import './base.css';
+body{
+  background: #111827;
+}
+.spinner-border {
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+header{
+  background: red;
+}
+.btn-accion{
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 8px;
+  margin-left: 1em;
+}
+input{
+  height: 43px;
+  width: 350px;
+  border-radius: 0.5em;
+  padding-left: 15px;
+}
+.seccion--finder{
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  background: #111827;
+  padding: 3em 0;
+  position: relative;
+  top: 8.5em;
+}
+.heroes{
+  margin-top: 17em;
+}
+h2{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+img{
+  width: 320px;
+  height: 317px;
+  max-width: 100%;
+  filter: grayscale(1);
+}
+.card:hover img{
+  filter: grayscale(0);
+}
+p{
+  height: 140px;
+  overflow: hidden;
+  background: #111827;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  padding: 15px;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  background: #1f2937;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.white{
+  color: white;
 }
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.center{
+  text-align: center;
+}
+.p1{
+  padding: 1em;
 }

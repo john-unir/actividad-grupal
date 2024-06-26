@@ -29,4 +29,4 @@ npm run build
 ```
 ### Vista final de la APP
 
-![Logo del Proyecto](assets/screen.png)
+![Logo del Proyecto](src/assets/screen.png)

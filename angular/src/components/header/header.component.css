@@ -1,0 +1,17 @@
+.title {
+  font-size: 3rem;
+}
+.image {
+  margin-top: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.navbar {
+  background-color: #f5f1f1;
+}
+.navbar-nav {
+  margin-left: 10px;
+}
+.nav-item:hover {
+  filter: brightness(10);
+}

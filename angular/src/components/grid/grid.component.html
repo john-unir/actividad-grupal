@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="flex flex-col bg-gray-900 p-10  grid-component">
+    <div class="search-container">
+      <input [(ngModel)]="searchQuery" type="text" id="simple-search" class="search-input mt-3" placeholder="Search" required>
+      <button (click)="searchCharacters()" type="submit" class="search-button">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="container mt-4">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col-md-4 p-2" *ngFor="let character of characters">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <h5 class="card-title text-white">{{ character.name }}</h5>
+              </div>
+              <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" class="card-img-top" [alt]="character.name" style="height: 400px">
+              <p class="card-text text-white">{{ character.description || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

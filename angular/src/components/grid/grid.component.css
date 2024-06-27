@@ -52,7 +52,14 @@
 .card-img-top {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 20px;
+  filter: grayscale(1);
+  transition: 300ms;
 }
+
+.card-img-top:hover {
+  filter: grayscale(0);
+}
+
 .card-body {
   padding: 20px;
   height: 700px;
